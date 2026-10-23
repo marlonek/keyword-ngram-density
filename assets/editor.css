@@ -1,0 +1,59 @@
+.kngd-box .kngd-sub {
+	color: #646970;
+	margin: 0 0 10px;
+}
+
+.kngd-sizes label {
+	display: inline-block;
+	margin: 4px 8px 0 0;
+	font-weight: normal;
+}
+
+#kngd-min {
+	width: 64px;
+}
+
+#kngd-meta {
+	margin-top: 8px;
+	font-size: 12px;
+}
+
+.kngd-muted {
+	color: #646970;
+}
+
+.kngd-tabs {
+	margin-top: 10px;
+	border-bottom: 1px solid #dcdcde;
+}
+
+.kngd-tab {
+	display: inline-block;
+	padding: 5px 8px;
+	cursor: pointer;
+	border-bottom: 2px solid transparent;
+	font-size: 12px;
+}
+
+.kngd-tab.active {
+	border-color: #2271b1;
+	font-weight: 600;
+}
+
+.kngd-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 6px;
+}
+
+.kngd-table th,
+.kngd-table td {
+	text-align: left;
+	padding: 3px 4px;
+	border-bottom: 1px solid #f0f0f1;
+	font-size: 12px;
+}
+
+.kngd-table .num {
+	text-align: right;
+}
