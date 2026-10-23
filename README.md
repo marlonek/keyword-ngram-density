@@ -21,11 +21,13 @@ Google Sheets add-on — same phrase-counting engine, inside WordPress.
 ## Files
 
 ```
-keyword-ngram-density.php  — plugin bootstrap: meta box + asset enqueue
-assets/editor.js           — n-gram engine + UI (runs in the browser)
-assets/editor.css          — panel styling
-readme.txt                 — WordPress.org readme
+keyword-n-gram-density.php  — plugin bootstrap: meta box + asset enqueue
+assets/editor.js            — n-gram engine + UI (runs in the browser)
+assets/editor.css           — panel styling
+readme.txt                  — WordPress.org readme
 ```
+
+The WordPress plugin slug / text domain is `keyword-n-gram-density`.
 
 ## Privacy
 

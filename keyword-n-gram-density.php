@@ -10,7 +10,7 @@
  * Author URI:        https://bartoszkoplin.pl
  * License:           GPLv2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       keyword-ngram-density
+ * Text Domain:       keyword-n-gram-density
  *
  * @package KeywordNgramDensity
  */
@@ -29,7 +29,7 @@ function kngd_add_meta_box() {
 	foreach ( $screens as $screen ) {
 		add_meta_box(
 			'kngd_meta_box',
-			__( 'Keyword n-gram density', 'keyword-ngram-density' ),
+			__( 'Keyword n-gram density', 'keyword-n-gram-density' ),
 			'kngd_render_meta_box',
 			$screen,
 			'side',
@@ -46,10 +46,10 @@ add_action( 'add_meta_boxes', 'kngd_add_meta_box' );
 function kngd_render_meta_box() {
 	?>
 	<div class="kngd-box">
-		<p class="kngd-sub"><?php esc_html_e( 'Find repeated 1–5 word phrases in this post.', 'keyword-ngram-density' ); ?></p>
+		<p class="kngd-sub"><?php esc_html_e( 'Find repeated 1–5 word phrases in this post.', 'keyword-n-gram-density' ); ?></p>
 
 		<p class="kngd-sizes">
-			<strong><?php esc_html_e( 'Phrase lengths:', 'keyword-ngram-density' ); ?></strong><br />
+			<strong><?php esc_html_e( 'Phrase lengths:', 'keyword-n-gram-density' ); ?></strong><br />
 			<label><input type="checkbox" class="kngd-size" value="1" checked /> 1</label>
 			<label><input type="checkbox" class="kngd-size" value="2" checked /> 2</label>
 			<label><input type="checkbox" class="kngd-size" value="3" checked /> 3</label>
@@ -58,16 +58,16 @@ function kngd_render_meta_box() {
 		</p>
 
 		<p>
-			<label><?php esc_html_e( 'Min. count', 'keyword-ngram-density' ); ?>
+			<label><?php esc_html_e( 'Min. count', 'keyword-n-gram-density' ); ?>
 				<input type="number" id="kngd-min" value="2" min="1" step="1" />
 			</label>
 		</p>
 		<p>
-			<label><input type="checkbox" id="kngd-stop" /> <?php esc_html_e( 'Ignore stop-words', 'keyword-ngram-density' ); ?></label>
+			<label><input type="checkbox" id="kngd-stop" /> <?php esc_html_e( 'Ignore stop-words', 'keyword-n-gram-density' ); ?></label>
 		</p>
 
 		<p>
-			<button type="button" class="button button-primary" id="kngd-run"><?php esc_html_e( 'Analyze', 'keyword-ngram-density' ); ?></button>
+			<button type="button" class="button button-primary" id="kngd-run"><?php esc_html_e( 'Analyze', 'keyword-n-gram-density' ); ?></button>
 		</p>
 
 		<div id="kngd-meta" class="kngd-muted"></div>
