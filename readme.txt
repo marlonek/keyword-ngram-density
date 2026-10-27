@@ -1,4 +1,4 @@
-=== Keyword n-gram density ===
+=== Melioo Keyword Density ===
 Contributors: marlonk
 Tags: keyword density, seo, phrases, ngram, editor
 Requires at least: 5.8
@@ -12,7 +12,7 @@ See which 1–5 word phrases repeat in the post you are editing, so you can chec
 
 == Description ==
 
-Keyword n-gram density adds a small panel to the WordPress editor that counts how
+Melioo Keyword Density adds a small panel to the WordPress editor that counts how
 often 1-, 2-, 3-, 4- and 5-word phrases repeat in the post you are writing — so you
 can spot over-used phrases, check your keyword focus, and tighten repetitive copy.
 

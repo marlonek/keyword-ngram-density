@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Keyword n-gram density
+ * Plugin Name:       Melioo Keyword Density
  * Plugin URI:        https://github.com/marlonek/keyword-ngram-density
  * Description:       Shows repeated 1–5 word phrases (n-grams) in the post you are editing, so you can check keyword focus and trim repetition. Analysis runs in your browser — no data is sent anywhere.
  * Version:           1.0.0
@@ -10,9 +10,9 @@
  * Author URI:        https://bartoszkoplin.pl
  * License:           GPLv2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       keyword-n-gram-density
+ * Text Domain:       melioo-keyword-density
  *
- * @package KeywordNgramDensity
+ * @package MeliooKeywordDensity
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -29,7 +29,7 @@ function kngd_add_meta_box() {
 	foreach ( $screens as $screen ) {
 		add_meta_box(
 			'kngd_meta_box',
-			__( 'Keyword n-gram density', 'keyword-n-gram-density' ),
+			__( 'Melioo Keyword Density', 'melioo-keyword-density' ),
 			'kngd_render_meta_box',
 			$screen,
 			'side',
@@ -46,10 +46,10 @@ add_action( 'add_meta_boxes', 'kngd_add_meta_box' );
 function kngd_render_meta_box() {
 	?>
 	<div class="kngd-box">
-		<p class="kngd-sub"><?php esc_html_e( 'Find repeated 1–5 word phrases in this post.', 'keyword-n-gram-density' ); ?></p>
+		<p class="kngd-sub"><?php esc_html_e( 'Find repeated 1–5 word phrases in this post.', 'melioo-keyword-density' ); ?></p>
 
 		<p class="kngd-sizes">
-			<strong><?php esc_html_e( 'Phrase lengths:', 'keyword-n-gram-density' ); ?></strong><br />
+			<strong><?php esc_html_e( 'Phrase lengths:', 'melioo-keyword-density' ); ?></strong><br />
 			<label><input type="checkbox" class="kngd-size" value="1" checked /> 1</label>
 			<label><input type="checkbox" class="kngd-size" value="2" checked /> 2</label>
 			<label><input type="checkbox" class="kngd-size" value="3" checked /> 3</label>
@@ -58,16 +58,16 @@ function kngd_render_meta_box() {
 		</p>
 
 		<p>
-			<label><?php esc_html_e( 'Min. count', 'keyword-n-gram-density' ); ?>
+			<label><?php esc_html_e( 'Min. count', 'melioo-keyword-density' ); ?>
 				<input type="number" id="kngd-min" value="2" min="1" step="1" />
 			</label>
 		</p>
 		<p>
-			<label><input type="checkbox" id="kngd-stop" /> <?php esc_html_e( 'Ignore stop-words', 'keyword-n-gram-density' ); ?></label>
+			<label><input type="checkbox" id="kngd-stop" /> <?php esc_html_e( 'Ignore stop-words', 'melioo-keyword-density' ); ?></label>
 		</p>
 
 		<p>
-			<button type="button" class="button button-primary" id="kngd-run"><?php esc_html_e( 'Analyze', 'keyword-n-gram-density' ); ?></button>
+			<button type="button" class="button button-primary" id="kngd-run"><?php esc_html_e( 'Analyze', 'melioo-keyword-density' ); ?></button>
 		</p>
 
 		<div id="kngd-meta" class="kngd-muted"></div>
